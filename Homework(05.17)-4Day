@@ -1,0 +1,40 @@
+package javabasic;
+
+public class Hw4day {
+	public static void main(String[] args) {
+	
+	      System.out.println("5월 17일 과제(4Day)");
+	      
+	      
+	      System.out.println("----------------------------------------------------------");
+	      System.out.println("문제1");
+	      int a = 10;
+	      int b = 25;
+	      int c = 33;
+	      System.out.println("a = " + a);
+	      System.out.println("b = " + b);
+	      System.out.println("c = " + c);
+	      System.out.println("a+b+c = " + (a+b+c));
+	      System.out.println("(a+b+c)/3 = " + ((a+b+c)/3) + " (소수점 이하 버림)");
+	      System.out.println("(a+b+c)/3 = " + ((double)(a+b+c)/3) + " (소수점 이하 포함)");
+	      
+	      
+	      System.out.println("----------------------------------------------------------");
+	      System.out.println("문제2");
+	      int d = 20;
+	      int e = 35;
+	      System.out.println( "d = " + d );
+	      System.out.println( "e = " + e );
+	      System.out.println( "d' = " + (d+=100));
+	      System.out.println( "e' = " + (e%10));
+	      
+	      System.out.println("----------------------------------------------------------");
+	      System.out.println("문제3");
+	      int f = 35;
+	      int g = 10; 
+	      System.out.println( "f = " + f );
+	      System.out.println( "g = " + g );
+	      System.out.println( f + "/"+ g  + " = " + (f/g) + "..." + (f%g) );
+	          
+	}
+}
