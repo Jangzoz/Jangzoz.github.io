@@ -1,0 +1,124 @@
+package Day5;
+
+public class Day5homework1 {
+
+	public static void main(String[] args) {
+
+		System.out.println("5월 18일 (Day5) 교재 p123");
+		System.out.println("-----Q1-----");
+		     int num1 = 10;
+		     int num2 = 2;
+		     char operator = '+';
+		     
+		     if (operator == '+')      {   System.out.println(num1 + " + " + num2 + " = " + (num1+num2));   }
+		     else if (operator == '-') {   System.out.println(num1 + " - " + num2 + " = " + (num1-num2));   }
+		     else if (operator == '*') {   System.out.println(num1 + " * " + num2 + " = " + (num1*num2));   }
+		     else if (operator == '/') {   System.out.println(num1 + " / " + num2 + " = " + (num1/num2));   }
+		     
+             switch (operator) {
+             case '+' : System.out.println(num1 + " + " + num2 + " = " + (num1+num2)); break;
+             case '-' : System.out.println(num1 + " - " + num2 + " = " + (num1-num2)); break;
+             case '*' : System.out.println(num1 + " * " + num2 + " = " + (num1*num2)); break;
+             case '/' : System.out.println(num1 + " / " + num2 + " = " + (num1/num2)); break;     }
+		     
+		System.out.println("-----Q2-----");
+			 
+			 int dan; // continue 사용하지 않는 방법
+			 int num;
+			 for (dan=1; dan<10; dan++) {
+				 if (dan%2==0) {
+				     for(num=1; num<10; num++) {
+				     System.out.println(dan + "*"+ num + " = " + (dan*num));
+				     }
+			     }
+			 }
+			
+			 dan = 1; // continue 사용한 방법으로 다시 한 번
+			 num = 1;
+	         for (dan=1; dan<10; dan++) {
+	        	 if (dan%2==1) continue; {
+				     for(num=1; num<10; num++) {
+				     System.out.println(dan + "*"+ num + " = " + (dan*num));
+				     }
+	             }
+	         }
+
+		System.out.println("-----Q3-----");
+
+		     dan = 2; 
+		     num = 1;
+		     for (dan=2; dan<10; dan++) {
+	             for (num=1; num<10; num++) {
+	            	 if (dan < num) continue;
+	            	 else {
+					     System.out.println(dan + "*"+ num + " = " + (dan*num));
+	            	 }       
+	             } 	  	   
+		      }
+		        	   
+		System.out.println("-----Q4-----"); 
+		int i;
+		int starnum = 1;
+		int space;
+		int star; 
+		int g = 5;
+		
+        for (i=0; i<4; i++) { 
+        	for (space=0; space<g; space++) { System.out.print(" "); }
+		    for (star=0; star<starnum; star++) { System.out.print("*"); }
+        	for (space=0; space<g; space++) { System.out.print(" "); }
+        System.out.println(""); 
+        starnum++; starnum++; g--;
+        }
+		     
+		System.out.println("-----Q5-----"); 
+		
+		starnum = 1;
+		g = 5;
+		
+        for (i=0; i<4; i++) {
+        	for (space=0; space<g; space++) { System.out.print(" "); }
+		    for (star=0; star<starnum; star++) { System.out.print("*"); }
+        	for (space=0; space<g; space++) { System.out.print(" "); }
+        System.out.println(""); 
+        starnum++; starnum++; g--;
+        }
+        
+        starnum--; starnum--; g++;
+        starnum--; starnum--; g++;
+        
+        for (i=0; i<3; i++) {
+        	for (space=0; space<g; space++) { System.out.print(" "); }
+		    for (star=0; star<starnum; star++) { System.out.print("*"); }
+        	for (space=0; space<g; space++) { System.out.print(" "); }
+        System.out.println(""); 
+        starnum--; starnum--; g++;
+        }
+		    
+		
+		System.out.println("-----p100 나혼자 코딩-----");          
+	         int score = 20;
+	         char grade ;
+			 if ( (score >= 90) && (score <= 100) ) { grade = 'A'; System.out.println("성적은 " + grade + "입니다."); }
+			 else if ( (score >= 80) && (score < 90) ) { grade = 'B'; System.out.println("성적은 " + grade + "입니다."); }
+			 else if ( (score >= 70) && (score < 80) ) { grade = 'C'; System.out.println("성적은 " + grade + "입니다."); }
+			 else if ( (score >= 60) && (score < 70) ) { grade = 'D'; System.out.println("성적은 " + grade + "입니다."); }
+			 else { grade = 'F'; System.out.println("성적은 " + grade + "입니다."); }
+			 
+		System.out.println("-----p106 나혼자 코딩-----"); 
+		   int floor = 5;
+		   switch(floor) {
+		   case 1: System.out.println(floor + "층은 약국입니다."); break;
+		   case 2: System.out.println(floor + "층은 정형외과입니다."); break;
+		   case 3: System.out.println(floor + "층은 피부과입니다."); break;
+		   case 4: System.out.println(floor + "층은 치과입니다."); break;
+		   case 5: System.out.println(floor + "층은 헬스클럽입니다."); break;
+		   default: System.out.println("잘못된 입력입니다."); break;
+		   }
+		
+		   
+		
+		
+	}
+
+}
