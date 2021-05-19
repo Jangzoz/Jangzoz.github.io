@@ -1,0 +1,47 @@
+package Day5;
+
+import java.util.Scanner;
+
+public class Day5homework2 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("----------5월 18일 Day5 과제2----------");
+		
+		System.out.println("피연산자: ");
+		int num1 = scanner.nextInt();
+		System.out.println("연산자: ");
+		char run = scanner.next().charAt(0);;
+		System.out.println("피연산자: ");
+		int num2 = scanner.nextInt();
+		
+	    if (run == '+')      {   System.out.println(num1 + " + " + num2 + " = " + (num1+num2));   }
+	    else if (run == '-') {   System.out.println(num1 + " - " + num2 + " = " + (num1-num2));   }
+	    else if (run == '*') {   System.out.println(num1 + " * " + num2 + " = " + (num1*num2));   }
+	    else if (run == '/') {   System.out.println(num1 + " / " + num2 + " = " + (num1/num2));   }  
+
+	    
+	    
+		System.out.println("----------5월 18일 Day5 과제3----------");
+		
+		System.out.println("체중(kg): ");
+		int weight = scanner.nextInt();
+		
+		if (weight == -1) { System.out.println("종료"); }
+		
+		else {
+		      System.out.println("신장(cm): ");
+		      int height = scanner.nextInt();
+		      int j = weight + 100 - height;
+		
+		      if (j>0) { System.out.println("비만입니다."); }
+		      else { System.out.println("비만수치 미만입니다."); }
+
+			
+		}
+		
+		
+	}
+
+}
