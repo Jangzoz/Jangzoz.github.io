@@ -1,0 +1,56 @@
+package Day6;
+
+import java.util.Scanner;
+
+public class DAy6homework {
+
+	public static void main(String[] args) {		
+		Scanner scanner = new Scanner(System.in);
+		/*	
+		// 05/20 과제1
+		System.out.println("자연수를 입력하세요.");
+		int in = scanner.nextInt();
+		int sum = 0;
+		int i;
+		
+		for (i = 0; i<in; i++) {
+			if ( sum > in ) {break;}
+		    if ( i%2 == 1 ) { sum += i;	}
+		    else { continue; }
+		}
+		
+		System.out.println(i/2 + " " + sum);  
+		
+		// 05/20 과제2
+		System.out.println("층수를 입력하세요.");
+		int floor = scanner.nextInt();
+		
+        for ( int a = 1; a < floor+1; a++ ) {
+		    for ( int b = 1; b < a+1; b++ ) { System.out.print(" "); }
+		    for ( int s = 1; s < floor*2+2-a*2; s++) { System.out.print("*"); }
+			System.out.println("");
+        }
+        
+        int num = 5;
+        
+        for (int c = 1; c < floor; c++ ) {
+        	for ( int b = 1; b < floor-c+1; b++) { System.out.print(" "); }
+        	for ( int s = 1; s < num-1; s++) { System.out.print("*"); }
+			System.out.println("");
+			num++; num++;
+        }  */
+        
+        // 05/20 과제3  이 부분은 늦게라도 완성하겠습니다.
+        
+		System.out.println("자연수를 입력하세요.");
+		int n = scanner.nextInt();
+		
+		int[][] arr = new int [n][n];
+		
+		while ( )
+		
+        
+        
+	}
+
+}
